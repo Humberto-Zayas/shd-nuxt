@@ -94,9 +94,9 @@ import DrumPreview from '~/components/DrumPreview.vue'
         this.temp = value.src
         
       },
-      playTrack(value) {
-        
-        this.$refs.drumplayer.togglePlayback()
+      playTrack() {
+        this.$refs.drumplayer.stop()
+        this.$refs.drumplayer.play()
       },
     }
   }
