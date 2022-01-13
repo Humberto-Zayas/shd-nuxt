@@ -6,15 +6,16 @@
                     Drum Kit Tree
                 </v-card-title>
                 <template>
-                  <h1> Temp Array Length: {{temp.length}} </h1>
                     <v-treeview
-                        @update:active="newSample, playTrack()"
+                        @update:active="playTrack()"
                         return-object
                         activatable
                         :items="items"
                     >
                       <template v-slot:label="{ item }">
-                        {{item.name}}
+                        
+                        <span v-if="item.src"  @click="newSample(item)">{{item.name}}</span>
+                        <span v-else>{{item.name}}</span>
                       </template>
                     </v-treeview>
                 </template>
@@ -90,11 +91,11 @@ import DrumPreview from '~/components/DrumPreview.vue'
         // if (value[0].length > 1) {
         //   this.temp = value[0].src
         // }
-        this.temp = value[0].src
+        this.temp = value.src
         
       },
-      playTrack() {
-
+      playTrack(value) {
+        
         this.$refs.drumplayer.togglePlayback()
       },
     }
