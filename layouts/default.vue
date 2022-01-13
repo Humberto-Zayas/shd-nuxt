@@ -110,9 +110,14 @@ export default {
           to: '/inspire'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-play',
           title: 'Player',
           to: '/player'
+        },
+        {
+          icon: 'mdi-cart',
+          title: 'Product',
+          to: '/product'
         }
       ],
       miniVariant: false,
