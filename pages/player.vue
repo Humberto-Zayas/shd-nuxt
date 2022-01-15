@@ -133,7 +133,8 @@ export default {
         this.selectedTrack = track
       },
       playTrack() {
-        this.$refs.audioplayer.togglePlayback()
+        this.$refs.audioplayer.stop()
+        this.$refs.audioplayer.play()
       },
       songPlaying() {
         this.playing = !this.playing

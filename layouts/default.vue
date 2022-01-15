@@ -118,6 +118,11 @@ export default {
           icon: 'mdi-cart',
           title: 'Product',
           to: '/product'
+        },
+        {
+          icon: 'mdi-table',
+          title: 'Drumkit Table',
+          to: '/drumkit-table'
         }
       ],
       miniVariant: false,
