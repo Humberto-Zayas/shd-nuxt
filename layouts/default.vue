@@ -105,19 +105,14 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        },
-        {
           icon: 'mdi-play',
           title: 'Player',
           to: '/player'
         },
         {
-          icon: 'mdi-cart',
-          title: 'Product',
-          to: '/product'
+          icon: 'mdi-tree',
+          title: 'Tree View',
+          to: '/treeview'
         },
         {
           icon: 'mdi-table',
