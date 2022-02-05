@@ -8,13 +8,14 @@
                 <template>
                     <v-treeview
                         @update:active="playTrack()"
+                        return-object
                         activatable
                         :items="items"
                     >
                       <template v-slot:label="{ item }">
                         
-                        <span v-if="item.src" @click="newSample(item)">{{item.name}}</span>
-                        <span v-else @click="newSample(item)">{{item.name}}</span>
+                        <span v-if="item.src"  @click="newSample(item)">{{item.name}}</span>
+                        <span v-else>{{item.name}}</span>
                       </template>
                     </v-treeview>
                 </template>
