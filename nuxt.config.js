@@ -11,8 +11,8 @@ export default {
         src: "https://identity.netlify.com/v1/netlify-identity-widget.js"
       }
     ],
-    titleTemplate: '%s - shd-nuxt',
-    title: 'shd-nuxt',
+    titleTemplate: 'Sounds in HD Revamp',
+    title: 'shd-revamp',
     htmlAttrs: {
       lang: 'en'
     },

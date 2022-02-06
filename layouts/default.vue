@@ -52,19 +52,19 @@
       </v-btn>
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-btn
+      <!-- <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer"
       >
         <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      </v-btn> -->
     </v-app-bar>
     <v-main>
       <v-container>
         <Nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
       temporary
@@ -80,7 +80,7 @@
           <v-list-item-title>Switch drawer (click me)</v-list-item-title>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>
+    </v-navigation-drawer> -->
     <v-footer
       :absolute="!fixed"
       app
@@ -105,8 +105,8 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          icon: 'mdi-road',
+          title: 'Road Map',
           to: '/inspire'
         },
         {
@@ -115,9 +115,9 @@ export default {
           to: '/player'
         },
         {
-          icon: 'mdi-cart',
-          title: 'Product',
-          to: '/product'
+          icon: 'mdi-tree',
+          title: 'Treeview',
+          to: '/treeview'
         },
         {
           icon: 'mdi-table',
@@ -128,7 +128,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'SHD Beta'
     }
   }
 }
